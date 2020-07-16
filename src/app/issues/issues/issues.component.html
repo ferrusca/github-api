@@ -1,0 +1,6 @@
+<div id="issues">
+  <input class="search-bar" type="text" (keyup)="search($event)" [placeholder]="searchBarPlaceholder">
+  <section aria-label="Issues">
+    <app-issue *ngFor="let issue of issues$ | async" [issue]="issue"></app-issue>
+  </section>
+</div>

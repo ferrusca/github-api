@@ -1,0 +1,10 @@
+<div class="issue-box">
+  <a href="{{issue.url}}" class="issue-title">{{issue.title}}</a>
+  <a href="{{label.url}}" *ngFor="let label of issue.labels" class="chip" [style.background]="label | LabelBackground">
+    {{label.name}}
+  </a>
+  <div class="info gray-text">
+    {{ issue | IssueNumber }} <a href="{{issue.user.html_url}}">{{ issue | IssueUserUsername }}</a>
+    {{ issue | IssueTimeAgo }}
+  </div>
+</div>

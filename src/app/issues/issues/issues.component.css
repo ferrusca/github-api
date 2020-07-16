@@ -1,0 +1,16 @@
+
+#issues {
+  padding: 32px;
+}
+
+.search-bar {
+  border: 1px solid #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.search-bar:focus {
+  border-color: blue;
+  box-shadow: 0 0 0 3px rgba(131, 133, 167, 0.3);
+  outline: none;
+}
